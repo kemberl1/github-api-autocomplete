@@ -18,9 +18,9 @@ export class Search extends View {
 			} catch (error) {
 				console.log(error)
 			}
+		}
+		this.clearSearch()
 	}
-	this.clearSearch()
-}
 
 	debounce(callback, delay) {
 		let timeout;
