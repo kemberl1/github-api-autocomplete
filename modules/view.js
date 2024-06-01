@@ -36,7 +36,8 @@ export class View {
 		repoItem.textContent = item.name;
 		this.searchResults.append(repoItem)
 		repoItem.addEventListener('click', () => {
-			this.createRepoList(item)})
+			this.createRepoList(item)
+		})
 	}
 
 	createRepoList(repo) {
@@ -52,14 +53,14 @@ export class View {
 		const removeBtn = this.createElement('button', 'remove-btn');
 		removeBtn.textContent = '✖';
 		this.repoList.addEventListener('click', (event) => {
-      this.handleRemove(event);
-    });
+			this.handleRemove(event);
+		});
 
 		repoInfo.append(removeBtn);
 		this.repoList.append(repoInfo);
 		this.clearSearch()
 		this.searchInput.value = ''
-		
+
 		return repoInfo;
 	}
 
@@ -67,10 +68,10 @@ export class View {
 		this.searchResults.textContent = '';
 	}
 
-	 handleRemove(event) {
-    if (event.target.classList.contains('remove-btn')) {
-      const item = event.target.closest('.repo-list__item');
-      item.remove();
-    }
-  }
+	handleRemove(event) {
+		if (event.target.classList.contains('remove-btn')) {
+			const item = event.target.closest('.repo-list__item');
+			item.remove();
+		}
+	}
 }
