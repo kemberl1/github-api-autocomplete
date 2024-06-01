@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url(./fonts/Roboto-Regular.ttf);
+}
+
+body{
+	background-color: #C4C4C4;
+	font-family: 'Roboto';
+	font-size: 1em;
+}
+span{
+	max-width: 500px;
+	display: inline-block;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.title {
+	text-align: center;
+}
+.search-input {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 30px;
+}
+.search-results{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	font-size: 20px;
+}
+.search-item, .repo-list{
+	list-style: none;
+	padding: 0;
+	font-size: 1em;
+}
+
+.repo-item, .repo-list__item{
+	background-color: #E3E3E3;
+	border: 1px solid black;
+}
+
+
+.repo-item:hover{
+background-color: #65CDF9;
+}
+
+.repo-list__item{ 
+	position: relative;
+	overflow: hidden;
+	padding: 8px 16px;
+	background-color: #E27BEB;
+}
+
+.remove-btn {
+	position: absolute;
+	right: 16px;
+	bottom: 3px;
+	top: 0;
+	background: none;
+	color: red;
+	font-size: 35px;
+	border: none;
+	padding: 5px;
+	cursor: pointer;
+}
