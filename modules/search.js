@@ -30,5 +30,4 @@ export class Search extends View {
 			}, delay)
 		}
 	}
-
 }
