@@ -1,5 +1,3 @@
-
-
 export class View {
 
 	constructor() {
