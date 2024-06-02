@@ -1,7 +1,6 @@
-const REPO_PER_REQUIRE = 5;
-
 import { View } from './view.js';
 
+const REPO_PER_REQUIRE = 5;
 export class Search extends View {
 	constructor() {
 		super()
