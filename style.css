@@ -33,6 +33,7 @@ span{
 	list-style: none;
 	padding: 0;
 	font-size: 20px;
+	cursor: pointer;
 }
 .search-item, .repo-list{
 	list-style: none;
